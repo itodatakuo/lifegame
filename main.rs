@@ -13,15 +13,6 @@ fn main() {
 
 fn initialize() {
     let mut grid = vec![vec![false;WIDTH];HEIGHT];
-    let mut input = String::new();
-    println!("初期パターンを入力 (例: 5 6 3 2 または 5,6 3,2)");
-    stdout().flush().expect("フラッシュ失敗");
-    stdin().read_line(&mut input).expect("入力失敗");
-    let input = input.replace(",", " ");
-    let nums: Vec<i32> = input
-        .split_whitespace()
-        .filter_map(|x| x.parse().ok())
-        .collect();
+    let mut pattern = vec![(1,1),(1,2),(1,3),(1,4)]
     
-    println!("入力された座標: {:?}", nums);
 }
