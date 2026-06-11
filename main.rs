@@ -13,7 +13,7 @@ fn main() {
 
 fn initialize()　-> Vec<Vec<bool>> {
     let mut grid = vec![vec![false;WIDTH];HEIGHT];
-    let mut pattern = vec![(1,1),(1,2),(1,3),(1,4)];
+    let mut pattern = vec![(1,1),(1,2),(1,3),(1,4)(2,1)];
     for p in pattern {
         grid[p.0][p.1] = true;
     }
